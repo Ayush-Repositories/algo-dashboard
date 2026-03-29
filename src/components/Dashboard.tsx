@@ -177,7 +177,7 @@ export default function Dashboard() {
           <table className="min-w-full border-collapse">
             <thead>
               <tr className="bg-[var(--color-surface)] backdrop-blur-[12px] h-14">
-                <th className="sticky left-0 bg-[var(--color-surface)] z-10 px-3 text-left text-[10px] font-bold text-[var(--color-neon)] uppercase tracking-wider w-[230px] min-w-[230px] border-b-2 border-r border-[var(--color-border)]">
+                <th className="sticky left-0 bg-[var(--color-base)] z-10 px-3 text-left text-[10px] font-bold text-[var(--color-neon)] uppercase tracking-wider w-[230px] min-w-[230px] border-b-2 border-r border-[var(--color-border)]">
                   <div className="flex items-center">
                     <span className="w-6 shrink-0">#</span>
                     <span className="flex-1">Member</span>
@@ -228,8 +228,7 @@ export default function Dashboard() {
                     isTop3 ? 'bg-[var(--color-surface)]' : ''
                   }`}
                 >
-                  <td className="sticky left-0 z-10 px-3 w-[230px] min-w-[230px] border-r border-[var(--color-border)]"
-                    style={{ backgroundColor: isTop3 ? 'var(--color-surface)' : 'var(--color-base)' }}
+                  <td className="sticky left-0 z-10 px-3 w-[230px] min-w-[230px] border-r border-[var(--color-border)] bg-[var(--color-base)]"
                   >
                     <div className="flex items-center">
                       <span className={`w-6 shrink-0 text-xs font-bold ${
