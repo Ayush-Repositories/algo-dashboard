@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: algo-tracker-db
+    environment:
+      POSTGRES_USER: algo
+      POSTGRES_PASSWORD: algo123
+      POSTGRES_DB: algo_tracker
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./scripts/docker:/docker-entrypoint-initdb.d
+      - ./data.csv:/seed-data/data.csv:ro
+
+volumes:
+  pgdata:
